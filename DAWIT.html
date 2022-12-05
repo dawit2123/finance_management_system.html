@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title> Dawit </title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      table,td,th{
+        color: white;
+        border: 1px solid yellow;
+        border-collapse: collapse;
+      }
+      table{
+        width: 100%;
+        border-radius: 20px;
+      }
+      tr:hover{
+        background-color: brown;
+      }
+      tr:nth-child(even){
+        background-color:blue;
+      }
+      a:hover{
+        background-color: white;
+      }
+      #clock{
+    font-size: 50px;
+    float:right;
+    color: crimson;
+    border: green;
+    background-color: white;
+    }
+    #dave a:link{
+                font-size: 50px;
+                text-align: center;
+                background:linear-gradient(to right,green,yellow,red)
+            } 
+    #tried{
+      width:50%;
+      boarder: 2px solid red;
+      text-align: center;
+    }
+    #try{
+      width:90%;
+      text-align: center;
+    }
+    #boom{
+      text-align:center;
+    }
+            #fixed{
+                background-color: orange;
+                background:linear-gradient(green,yellow,red)
+            }
+            
+            #fixed li{
+                padding-top: 5px;
+                padding-right: 2px;
+                padding-left: 60px;
+                padding-bottom: 1px;
+                font-size: 50px;
+                margin: 30px;
+                display:inline-block;
+            }
+  </style>
+   </head>
+   <body style="color:deeppink;background-color: aqua;">
+  <div id="clock"></div>
+      <script>
+          setInterval(() =>{
+              let date = new Date()
+              let clock=document.getElementById('clock')
+              clock.innerHTML = 
+                date.getHours()+":"+
+                date.getMinutes()+":"+
+                date.getSeconds()
+          }, 1000);
+        </script>
+        
+	<div id="google_translate_element"></div>
+
+	
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {pageLanguage: 'en'},
+      'google_translate_element'
+    );
+  }
+</script>
+<script type="text/javascript"
+    src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+        <br>
+        <br>
+        <br>
+        <ul id="fixed">
+          <li style="list-style-type:none;">
+              <a href="index.htm">Home</a>
+          </li>
+          <li style="list-style-type:none;">
+              <a href="Table%20%20and%20google%20forms.html">
+                  Main page
+              </a>
+          </li>
+          <li style="list-style-type:none;">
+              <a href="devathgs.html">About the developer</a>
+          </li>
+      </ul>
+    <h1 style="color: aqua;text-align: center;">This is Developer Dawit Zewdu.</h1> 
+     <h1 style="text-align:center"><strong> He has studied different programming languages and he has been studying Software Engineering at Bahir Dar University</strong></h1> 
+
+       <!--<div id="tried">
+      <ul style="color:aquamarine;list-style-type: square;">
+        <li style="border: 2px solid orange">Name= Dawit Zewdu</li>
+        <li>Sex=Male</li>
+        <li>Profession = Software developer</li>
+        <li>Language= Englsh,Amharic</li>
+      </ul>
+    </div>-->
+    <div id="try" style="overflow-x:auto;">   
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Dawit Zewdu</th>
+      </tr>
+      <tr>
+        <th>Profession</th>
+        <th>Software Engineering student</th>
+      </tr>
+      <tr>
+        <th>
+          Nationality
+        </th>
+        <th>Ethiopian</th>
+      </tr>
+      <tr>
+        <th>Skills</th>
+        <th> C++, Java, Python, HTML, CSS, Java Script</th>
+      </tr>
+      <tr>
+        <th>Phone number</th>
+        <th>+251 97 779 04892</th>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <th>dawitzewdu212121@gmail.com</th>
+      </tr>
+    </table>
+  </div>
+
+  <div id="boom"><p style="color:aqua;font-size:20px"><strong> This website is developed by Dawit Zewdu</strong></p>
+     <img src="MY PHOTO.jpg" width="300" height="400" alt="this is it">
+      <div id="dave" style="text-align:center;"><a href="devathgs.html">To go back click here</a></div>
+    </div> 
+  </body>
+</html>

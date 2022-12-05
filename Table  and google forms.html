@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            /*a:link{
+                    background-color:gold;
+            }
+            a:visited{
+                background-color:hotpink;
+            }*/
+            a:hover{
+                background-color:white;
+            }
+            a:active{
+                background-color: darkblue;
+            }
+            li{
+                display: inline-block;
+            }
+            #dave a:link{
+                font-size: 50px;
+                text-align: center;
+                background:linear-gradient(to right,green,yellow,red)
+            }
+            #mail a:link{
+                background: linear-gradient(to right,greenyellow,yellow,red);
+                font-size: 40px;
+            }
+            #clock{
+            font-size: 50px;
+            float:right;
+            color: crimson;
+            border: green;
+            background-color: white;
+        } 
+        li{
+                display: inline-block;
+            }
+            ul{
+                background-color: orange;
+                background:linear-gradient(green,yellow,red)
+            }
+            
+            ul li{
+                padding-top: 5px;
+                padding-right: 2px;
+                padding-left: 60px;
+                padding-bottom: 1px;
+                font-size: 50px;
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body style="background-color:aqua">
+        
+          <div id="clock"></div>
+              <script>
+                  setInterval(() =>{
+                      let date = new Date()
+                      let clock=document.getElementById('clock')
+                      clock.innerHTML = 
+                        date.getHours()+":"+
+                        date.getMinutes()+":"+
+                        date.getSeconds()
+                  }, 1000);
+                </script>
+                
+	<div id="google_translate_element"></div>
+
+	
+    <script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	<script type="text/javascript"
+			src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+	</script>
+                <br>
+        <h1 style="color:white;background-color: blue;"><strong>Finance management system</strong></h1>
+        <ul>
+            <li style="list-style-type:none;">
+                <a href="index.htm">Home</a>
+            </li>
+            <li style="list-style-type:none;">
+                <a href="Table%20%20and%20google%20forms.html">
+                    Main page
+                </a>
+            </li>
+            <li style="list-style-type:none;">
+                <a href="devathgs.html">About the developer</a>
+            </li>
+        </ul>
+        <p style="color:blue;background-color:aqua">This is a google form with its own list. Please fill in the form accordingly!!!</p>
+       <form action="submission1.html">
+        <fieldset style="color:blue;border:2px solid blue;">
+            <strong>
+                <legend>Registartion form</legend>
+            <p>First Name:<input type="text" ;value="First_Name"></p>
+            <p>Middle Name:<input type="text" ;value="Second_Name" required=""></p>
+            <p>Family Name:<input type="text" ;value="Third_Name" required=""></p>
+            <p>Date of Registration<input type="date" required=""></p>
+            <p>Email Address: <input type="email" required=""></p>
+            <p>Profession level:
+            <select name="Profession level">
+              <option value="Bachelors">Bachelors</option>
+              <option value="Masters">Masters
+              </option>
+              <option value="PHD">PHD</option>
+            </select></p>
+            <!--<input type="radio" name="Age" value="20">
+            <input type="radio" name="Age" value="21">-->
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+            </strong>
+        </fieldset>
+       </form><br>
+       <p><button type="button" onclick="alert('This software is developed by Software Developer Dawit Zewdu')">Click here to know about the Developer of this Software</button></p>
+       <form action="submission2.html">
+       <fieldset>
+        <legend style="border:2px solid orange">
+        Please write your comments if you have any.
+        </legend>
+         <textarea name="Finance" rows="10" cols="20" placeholder="Write your comments here"></textarea><br>
+         <input type="submit" value=" Click here to  submit your comments"><br>
+         <input type="reset" value="Click here to  clear your comments"><br> 
+       </fieldset>
+       </form>    
+       <p style="color:black"><strong>Click the link below to directly contact  a Software Developer Dawit Zewdu</strong></p>
+       <div id="mail"><a href="mailto:dawitzewdu212121@gmail.com"><b><i>Click here</i></b></a><br></div>
+    <!--<video width=400 controls>
+        <source src="01.Lecture 1- Introduction website html Programming Tutorial in Amharic - በአማርኛ.MP4" type="video/mp4" >
+    </video>-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="dave"><a href="index.htm">To go back click here</a></div>
+    
+    <script src="../inc/wd.js?s=6iezcq7wadzm5liipoub1w"></script></body>
+</html>

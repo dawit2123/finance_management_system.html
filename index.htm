@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            h1{
+                color: blue;
+                text-align: center;
+                font-size:80px;
+                font-family: 'Times New Roman', Times, serif;
+                text-shadow: 6px 6px 10px yellow;
+            }
+            p{
+                color: red;
+                font-size: 50px;
+            }
+            a:link{
+                text-decoration:underline;
+            }
+            a:hover{
+                background-color:white;
+            }
+            a:active{
+                background-color: darkblue;
+            }
+            li{
+                display: inline-block;
+            }
+            ul{
+                background-color: orange;
+                background:linear-gradient(blue,white ,red)
+            }
+            
+            ul li{
+                padding-top: 5px;
+                padding-right: 2px;
+                padding-left: 60px;
+                padding-bottom: 1px;
+                font-size: 50px;
+                margin: 30px;
+            }
+            #two a:link{
+                background: linear-gradient(to right,greenyellow,yellow,red);
+            }
+            #two a:hover{
+                background-color: white;
+            }
+            #wow{
+                color:black;
+                text-decoration:underline;
+            }
+            #clock{
+                font-size: 50px;
+                float:right;
+                color: crimson;
+                border: green;
+                background-color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="clock"></div>
+        <script>
+            setInterval(() =>{
+                let date = new Date()
+                let clock=document.getElementById('clock')
+                clock.innerHTML = 
+                  date.getHours()+":"+
+                  date.getMinutes()+":"+
+                  date.getSeconds()
+            }, 1000);
+            </script>
+            
+            <br>
+            
+	<div id="google_translate_element"></div>
+
+	
+    <script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	<script type="text/javascript"
+			src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+	</script>
+            <hr>
+        <h1 id="dave">Finance Management System</h1>
+        <hr>
+        <ul>
+            <li style="list-style-type:none;">
+                <a href="index.htm">Home</a>
+            </li>
+            <li style="list-style-type:none;">
+                <a href="Table%20%20and%20google%20forms.html">
+                    Main page
+                </a>
+            </li>
+            <li style="list-style-type:none;">
+                <a href="devathgs.html">About the developer</a>
+            </li>
+        </ul>
+        <p id="wow">Please click the link below to get into the main page</p>
+        <div id="two"><a href="Table%20%20and%20google%20forms.html" style="font-size:30px;">CLICK HERE</a></div>
+         <br>
+         <br>
+         <br>
+        <footer>&copy Copyright. This website is made by Developer Dawit Zewdu</footer>
+    <script src="../inc/wd.js?s=6iezcq7wadzm5liipoub1w"></script></body>
+</html>
